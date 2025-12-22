@@ -106,14 +106,21 @@ namespace devoirPOO_video_game_library
             //MessageBox.Show($"modification sauvegardée !");
         }
         public void DisplayGames()
+
         {
             flowLayoutPanelList.Controls.Clear();
             foreach (var game in videoGame)
             {
                 GameCard gameCard = new GameCard();
                 gameCard.SetGameCardValues(game);
+                // C'EST ICI : On dit à la carte d'appeler notre fonction de Form1
+                gameCard.Click += GameCard_Click;
+                // LIAISON DU MENU : On dit à la carte d'utiliser le menu contextuel de Form1
+                gameCard.ContextMenuStrip = contextMenuStripCardRightClick;
                 flowLayoutPanelList.Controls.Add(gameCard);
             }
+            // Très important : on rappelle ton calcul de marges dynamiques ici !
+            AdjustCardsMargins();
         }
         private void SearchGames(object sender, EventArgs e)
         {
@@ -148,6 +155,9 @@ namespace devoirPOO_video_game_library
             {
                 GameCard gameCard = new GameCard();
                 gameCard.SetGameCardValues(game);
+                // ICI : C'est cette ligne qui fait le lien ("le branchement")
+                gameCard.Click += GameCard_Click;
+                gameCard.ContextMenuStrip = contextMenuStripCardRightClick;
                 flowLayoutPanelList.Controls.Add(gameCard);
             }
 
@@ -161,5 +171,51 @@ namespace devoirPOO_video_game_library
         //{
         //    gameCard1;
         //}
+        // 1. La fonction qui sera appelée quand on clique sur n'importe quelle carte
+        private void GameCard_Click(object sender, EventArgs e)
+        {
+            // Le 'sender' est la carte qui a été cliquée
+            GameCard clickedCard = sender as GameCard;
+
+            if (clickedCard != null)
+            {
+                // Étape A : On déselectionne toutes les cartes du panel
+                foreach (Control c in flowLayoutPanelList.Controls)
+                {
+                    if (c is GameCard card)
+                    {
+                        card.IsSelected = false;
+                        // Grâce à notre propriété complète, l'ancienne bordure s'efface seule
+                    }
+                }
+
+                // Étape B : On sélectionne la carte cliquée
+                clickedCard.IsSelected = true;
+                // La nouvelle bordure apparaît seule
+
+                // Étape C : Tu peux maintenant récupérer les infos du jeu cliqué
+                // MessageBox.Show("Jeu sélectionné : " + clickedCard.Title);
+            }
+        }
+        private void DeleteVideoGame(object sender, EventArgs e)
+        {
+            ToolStripMenuItem item = sender as ToolStripMenuItem;
+            ContextMenuStrip menu = item?.Owner as ContextMenuStrip;
+            GameCard cardToDelete = menu?.SourceControl as GameCard;
+
+            if (cardToDelete?.GameData != null) // On accède directement aux données
+            {
+                DialogResult result = MessageBox.Show($"Supprimer {cardToDelete.Title} ?", "Confirm", MessageBoxButtons.YesNo);
+
+                if (result == DialogResult.Yes)
+                {
+                    // Suppression directe de l'objet stocké dans la carte
+                    videoGame.Remove(cardToDelete.GameData);
+
+                    SaveGameLibrary(filePath);
+                    DisplayGames();
+                }
+            }
+        }
     }
 }

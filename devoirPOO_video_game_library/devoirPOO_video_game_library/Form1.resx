@@ -120,138 +120,48 @@
   <metadata name="container.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
   </metadata>
-  <data name="&gt;&gt;toList.Name" xml:space="preserve">
-    <value>toList</value>
-  </data>
-  <data name="&gt;&gt;toList.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;toList.Parent" xml:space="preserve">
-    <value>container</value>
-  </data>
-  <data name="&gt;&gt;toList.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;addGame.Name" xml:space="preserve">
-    <value>addGame</value>
-  </data>
-  <data name="&gt;&gt;addGame.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;addGame.Parent" xml:space="preserve">
-    <value>container</value>
-  </data>
-  <data name="&gt;&gt;addGame.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;deleteGame.Name" xml:space="preserve">
-    <value>deleteGame</value>
-  </data>
-  <data name="&gt;&gt;deleteGame.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;deleteGame.Parent" xml:space="preserve">
-    <value>container</value>
-  </data>
-  <data name="&gt;&gt;deleteGame.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;editGame.Name" xml:space="preserve">
-    <value>editGame</value>
-  </data>
-  <data name="&gt;&gt;editGame.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;editGame.Parent" xml:space="preserve">
-    <value>container</value>
-  </data>
-  <data name="&gt;&gt;editGame.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="container.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="container.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="container.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1312, 762</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="container.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;container.Name" xml:space="preserve">
-    <value>container</value>
-  </data>
-  <data name="&gt;&gt;container.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;container.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;container.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;flowLayoutPanelList.Name" xml:space="preserve">
-    <value>flowLayoutPanelList</value>
-  </data>
-  <data name="&gt;&gt;flowLayoutPanelList.Type" xml:space="preserve">
-    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;flowLayoutPanelList.Parent" xml:space="preserve">
-    <value>toList</value>
-  </data>
-  <data name="&gt;&gt;flowLayoutPanelList.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;inputSort.Name" xml:space="preserve">
-    <value>inputSort</value>
-  </data>
-  <data name="&gt;&gt;inputSort.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;inputSort.Parent" xml:space="preserve">
-    <value>toList</value>
-  </data>
-  <data name="&gt;&gt;inputSort.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="toList.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 29</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="toList.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
-  </data>
-  <data name="toList.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1304, 729</value>
-  </data>
-  <data name="toList.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="toList.Text" xml:space="preserve">
-    <value>Lister</value>
-  </data>
-  <data name="&gt;&gt;toList.Name" xml:space="preserve">
-    <value>toList</value>
-  </data>
-  <data name="&gt;&gt;toList.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;toList.Parent" xml:space="preserve">
-    <value>container</value>
-  </data>
-  <data name="&gt;&gt;toList.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
   <data name="flowLayoutPanelList.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left, Right</value>
   </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="flowLayoutPanelList.AutoScroll" type="System.Boolean, mscorlib">
     <value>True</value>
+  </data>
+  <data name="gameCard2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="gameCard2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 5</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="gameCard2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
+  </data>
+  <data name="gameCard2.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>250, 0</value>
+  </data>
+  <data name="gameCard2.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>250, 400</value>
+  </data>
+  <data name="gameCard2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>250, 400</value>
+  </data>
+  <data name="gameCard2.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;gameCard2.Name" xml:space="preserve">
+    <value>gameCard2</value>
+  </data>
+  <data name="&gt;&gt;gameCard2.Type" xml:space="preserve">
+    <value>devoirPOO_video_game_library.GameCard, devoirPOO_video_game_library, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;gameCard2.Parent" xml:space="preserve">
+    <value>flowLayoutPanelList</value>
+  </data>
+  <data name="&gt;&gt;gameCard2.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="flowLayoutPanelList.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 36</value>
@@ -310,208 +220,31 @@
   <data name="&gt;&gt;inputSort.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="&gt;&gt;gbYP.Name" xml:space="preserve">
-    <value>gbYP</value>
-  </data>
-  <data name="&gt;&gt;gbYP.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;gbYP.Parent" xml:space="preserve">
-    <value>addGame</value>
-  </data>
-  <data name="&gt;&gt;gbYP.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;gbPf.Name" xml:space="preserve">
-    <value>gbPf</value>
-  </data>
-  <data name="&gt;&gt;gbPf.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;gbPf.Parent" xml:space="preserve">
-    <value>addGame</value>
-  </data>
-  <data name="&gt;&gt;gbPf.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;bgType.Name" xml:space="preserve">
-    <value>bgType</value>
-  </data>
-  <data name="&gt;&gt;bgType.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;bgType.Parent" xml:space="preserve">
-    <value>addGame</value>
-  </data>
-  <data name="&gt;&gt;bgType.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;gbDesc.Name" xml:space="preserve">
-    <value>gbDesc</value>
-  </data>
-  <data name="&gt;&gt;gbDesc.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;gbDesc.Parent" xml:space="preserve">
-    <value>addGame</value>
-  </data>
-  <data name="&gt;&gt;gbDesc.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;gbNameVG.Name" xml:space="preserve">
-    <value>gbNameVG</value>
-  </data>
-  <data name="&gt;&gt;gbNameVG.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;gbNameVG.Parent" xml:space="preserve">
-    <value>addGame</value>
-  </data>
-  <data name="&gt;&gt;gbNameVG.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;btnAddGame.Name" xml:space="preserve">
-    <value>btnAddGame</value>
-  </data>
-  <data name="&gt;&gt;btnAddGame.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnAddGame.Parent" xml:space="preserve">
-    <value>addGame</value>
-  </data>
-  <data name="&gt;&gt;btnAddGame.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;gbJacket.Name" xml:space="preserve">
-    <value>gbJacket</value>
-  </data>
-  <data name="&gt;&gt;gbJacket.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;gbJacket.Parent" xml:space="preserve">
-    <value>addGame</value>
-  </data>
-  <data name="&gt;&gt;gbJacket.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;inputHacked.Name" xml:space="preserve">
-    <value>inputHacked</value>
-  </data>
-  <data name="&gt;&gt;inputHacked.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;inputHacked.Parent" xml:space="preserve">
-    <value>addGame</value>
-  </data>
-  <data name="&gt;&gt;inputHacked.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;gbStatut.Name" xml:space="preserve">
-    <value>gbStatut</value>
-  </data>
-  <data name="&gt;&gt;gbStatut.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;gbStatut.Parent" xml:space="preserve">
-    <value>addGame</value>
-  </data>
-  <data name="&gt;&gt;gbStatut.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="&gt;&gt;inputFav.Name" xml:space="preserve">
-    <value>inputFav</value>
-  </data>
-  <data name="&gt;&gt;inputFav.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;inputFav.Parent" xml:space="preserve">
-    <value>addGame</value>
-  </data>
-  <data name="&gt;&gt;inputFav.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="&gt;&gt;inputMp.Name" xml:space="preserve">
-    <value>inputMp</value>
-  </data>
-  <data name="&gt;&gt;inputMp.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;inputMp.Parent" xml:space="preserve">
-    <value>addGame</value>
-  </data>
-  <data name="&gt;&gt;inputMp.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
-  <data name="addGame.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="toList.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 29</value>
   </data>
-  <data name="addGame.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="toList.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 3, 3, 3</value>
   </data>
-  <data name="addGame.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="toList.Size" type="System.Drawing.Size, System.Drawing">
     <value>1304, 729</value>
   </data>
-  <data name="addGame.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="addGame.Text" xml:space="preserve">
-    <value>Ajouter</value>
-  </data>
-  <data name="&gt;&gt;addGame.Name" xml:space="preserve">
-    <value>addGame</value>
-  </data>
-  <data name="&gt;&gt;addGame.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;addGame.Parent" xml:space="preserve">
-    <value>container</value>
-  </data>
-  <data name="&gt;&gt;addGame.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;lblYP.Name" xml:space="preserve">
-    <value>lblYP</value>
-  </data>
-  <data name="&gt;&gt;lblYP.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblYP.Parent" xml:space="preserve">
-    <value>gbYP</value>
-  </data>
-  <data name="&gt;&gt;lblYP.ZOrder" xml:space="preserve">
+  <data name="toList.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;inputYP.Name" xml:space="preserve">
-    <value>inputYP</value>
+  <data name="toList.Text" xml:space="preserve">
+    <value>Lister</value>
   </data>
-  <data name="&gt;&gt;inputYP.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;toList.Name" xml:space="preserve">
+    <value>toList</value>
   </data>
-  <data name="&gt;&gt;inputYP.Parent" xml:space="preserve">
-    <value>gbYP</value>
+  <data name="&gt;&gt;toList.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;inputYP.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="&gt;&gt;toList.Parent" xml:space="preserve">
+    <value>container</value>
   </data>
-  <data name="gbYP.Location" type="System.Drawing.Point, System.Drawing">
-    <value>8, 270</value>
-  </data>
-  <data name="gbYP.Size" type="System.Drawing.Size, System.Drawing">
-    <value>490, 52</value>
-  </data>
-  <data name="gbYP.TabIndex" type="System.Int32, mscorlib">
-    <value>24</value>
-  </data>
-  <data name="&gt;&gt;gbYP.Name" xml:space="preserve">
-    <value>gbYP</value>
-  </data>
-  <data name="&gt;&gt;gbYP.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;gbYP.Parent" xml:space="preserve">
-    <value>addGame</value>
-  </data>
-  <data name="&gt;&gt;gbYP.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;toList.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <data name="lblYP.Location" type="System.Drawing.Point, System.Drawing">
@@ -811,50 +544,26 @@
   <data name="&gt;&gt;inputYP.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="&gt;&gt;inputPf.Name" xml:space="preserve">
-    <value>inputPf</value>
+  <data name="gbYP.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 270</value>
   </data>
-  <data name="&gt;&gt;inputPf.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="gbYP.Size" type="System.Drawing.Size, System.Drawing">
+    <value>490, 52</value>
   </data>
-  <data name="&gt;&gt;inputPf.Parent" xml:space="preserve">
-    <value>gbPf</value>
+  <data name="gbYP.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
   </data>
-  <data name="&gt;&gt;inputPf.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="&gt;&gt;gbYP.Name" xml:space="preserve">
+    <value>gbYP</value>
   </data>
-  <data name="&gt;&gt;lblPf.Name" xml:space="preserve">
-    <value>lblPf</value>
-  </data>
-  <data name="&gt;&gt;lblPf.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblPf.Parent" xml:space="preserve">
-    <value>gbPf</value>
-  </data>
-  <data name="&gt;&gt;lblPf.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="gbPf.Location" type="System.Drawing.Point, System.Drawing">
-    <value>8, 136</value>
-  </data>
-  <data name="gbPf.Size" type="System.Drawing.Size, System.Drawing">
-    <value>490, 64</value>
-  </data>
-  <data name="gbPf.TabIndex" type="System.Int32, mscorlib">
-    <value>22</value>
-  </data>
-  <data name="&gt;&gt;gbPf.Name" xml:space="preserve">
-    <value>gbPf</value>
-  </data>
-  <data name="&gt;&gt;gbPf.Type" xml:space="preserve">
+  <data name="&gt;&gt;gbYP.Type" xml:space="preserve">
     <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;gbPf.Parent" xml:space="preserve">
+  <data name="&gt;&gt;gbYP.Parent" xml:space="preserve">
     <value>addGame</value>
   </data>
-  <data name="&gt;&gt;gbPf.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="&gt;&gt;gbYP.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="inputPf.Items" xml:space="preserve">
     <value>3DO</value>
@@ -1084,50 +793,26 @@
   <data name="&gt;&gt;lblPf.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="&gt;&gt;lblType.Name" xml:space="preserve">
-    <value>lblType</value>
+  <data name="gbPf.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 136</value>
   </data>
-  <data name="&gt;&gt;lblType.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="gbPf.Size" type="System.Drawing.Size, System.Drawing">
+    <value>490, 64</value>
   </data>
-  <data name="&gt;&gt;lblType.Parent" xml:space="preserve">
-    <value>bgType</value>
+  <data name="gbPf.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
   </data>
-  <data name="&gt;&gt;lblType.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="&gt;&gt;gbPf.Name" xml:space="preserve">
+    <value>gbPf</value>
   </data>
-  <data name="&gt;&gt;inputType.Name" xml:space="preserve">
-    <value>inputType</value>
-  </data>
-  <data name="&gt;&gt;inputType.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;inputType.Parent" xml:space="preserve">
-    <value>bgType</value>
-  </data>
-  <data name="&gt;&gt;inputType.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="bgType.Location" type="System.Drawing.Point, System.Drawing">
-    <value>8, 206</value>
-  </data>
-  <data name="bgType.Size" type="System.Drawing.Size, System.Drawing">
-    <value>490, 58</value>
-  </data>
-  <data name="bgType.TabIndex" type="System.Int32, mscorlib">
-    <value>21</value>
-  </data>
-  <data name="&gt;&gt;bgType.Name" xml:space="preserve">
-    <value>bgType</value>
-  </data>
-  <data name="&gt;&gt;bgType.Type" xml:space="preserve">
+  <data name="&gt;&gt;gbPf.Type" xml:space="preserve">
     <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;bgType.Parent" xml:space="preserve">
+  <data name="&gt;&gt;gbPf.Parent" xml:space="preserve">
     <value>addGame</value>
   </data>
-  <data name="&gt;&gt;bgType.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="&gt;&gt;gbPf.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="lblType.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 23</value>
@@ -1276,50 +961,26 @@
   <data name="&gt;&gt;inputType.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="&gt;&gt;lblDesc.Name" xml:space="preserve">
-    <value>lblDesc</value>
+  <data name="bgType.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 206</value>
   </data>
-  <data name="&gt;&gt;lblDesc.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblDesc.Parent" xml:space="preserve">
-    <value>gbDesc</value>
-  </data>
-  <data name="&gt;&gt;lblDesc.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;inputDesc.Name" xml:space="preserve">
-    <value>inputDesc</value>
-  </data>
-  <data name="&gt;&gt;inputDesc.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;inputDesc.Parent" xml:space="preserve">
-    <value>gbDesc</value>
-  </data>
-  <data name="&gt;&gt;inputDesc.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="gbDesc.Location" type="System.Drawing.Point, System.Drawing">
-    <value>8, 72</value>
-  </data>
-  <data name="gbDesc.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="bgType.Size" type="System.Drawing.Size, System.Drawing">
     <value>490, 58</value>
   </data>
-  <data name="gbDesc.TabIndex" type="System.Int32, mscorlib">
-    <value>20</value>
+  <data name="bgType.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
   </data>
-  <data name="&gt;&gt;gbDesc.Name" xml:space="preserve">
-    <value>gbDesc</value>
+  <data name="&gt;&gt;bgType.Name" xml:space="preserve">
+    <value>bgType</value>
   </data>
-  <data name="&gt;&gt;gbDesc.Type" xml:space="preserve">
+  <data name="&gt;&gt;bgType.Type" xml:space="preserve">
     <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;gbDesc.Parent" xml:space="preserve">
+  <data name="&gt;&gt;bgType.Parent" xml:space="preserve">
     <value>addGame</value>
   </data>
-  <data name="&gt;&gt;gbDesc.ZOrder" xml:space="preserve">
-    <value>3</value>
+  <data name="&gt;&gt;bgType.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="lblDesc.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 23</value>
@@ -1366,50 +1027,26 @@
   <data name="&gt;&gt;inputDesc.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="&gt;&gt;lblNameVG.Name" xml:space="preserve">
-    <value>lblNameVG</value>
+  <data name="gbDesc.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 72</value>
   </data>
-  <data name="&gt;&gt;lblNameVG.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="gbDesc.Size" type="System.Drawing.Size, System.Drawing">
+    <value>490, 58</value>
   </data>
-  <data name="&gt;&gt;lblNameVG.Parent" xml:space="preserve">
-    <value>gbNameVG</value>
+  <data name="gbDesc.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
   </data>
-  <data name="&gt;&gt;lblNameVG.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="&gt;&gt;gbDesc.Name" xml:space="preserve">
+    <value>gbDesc</value>
   </data>
-  <data name="&gt;&gt;inputNameVG.Name" xml:space="preserve">
-    <value>inputNameVG</value>
-  </data>
-  <data name="&gt;&gt;inputNameVG.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;inputNameVG.Parent" xml:space="preserve">
-    <value>gbNameVG</value>
-  </data>
-  <data name="&gt;&gt;inputNameVG.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="gbNameVG.Location" type="System.Drawing.Point, System.Drawing">
-    <value>8, 6</value>
-  </data>
-  <data name="gbNameVG.Size" type="System.Drawing.Size, System.Drawing">
-    <value>490, 60</value>
-  </data>
-  <data name="gbNameVG.TabIndex" type="System.Int32, mscorlib">
-    <value>19</value>
-  </data>
-  <data name="&gt;&gt;gbNameVG.Name" xml:space="preserve">
-    <value>gbNameVG</value>
-  </data>
-  <data name="&gt;&gt;gbNameVG.Type" xml:space="preserve">
+  <data name="&gt;&gt;gbDesc.Type" xml:space="preserve">
     <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;gbNameVG.Parent" xml:space="preserve">
+  <data name="&gt;&gt;gbDesc.Parent" xml:space="preserve">
     <value>addGame</value>
   </data>
-  <data name="&gt;&gt;gbNameVG.ZOrder" xml:space="preserve">
-    <value>4</value>
+  <data name="&gt;&gt;gbDesc.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
   <data name="lblNameVG.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 23</value>
@@ -1456,6 +1093,27 @@
   <data name="&gt;&gt;inputNameVG.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="gbNameVG.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 6</value>
+  </data>
+  <data name="gbNameVG.Size" type="System.Drawing.Size, System.Drawing">
+    <value>490, 60</value>
+  </data>
+  <data name="gbNameVG.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;gbNameVG.Name" xml:space="preserve">
+    <value>gbNameVG</value>
+  </data>
+  <data name="&gt;&gt;gbNameVG.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;gbNameVG.Parent" xml:space="preserve">
+    <value>addGame</value>
+  </data>
+  <data name="&gt;&gt;gbNameVG.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
   <data name="btnAddGame.Location" type="System.Drawing.Point, System.Drawing">
     <value>492, 677</value>
   </data>
@@ -1482,63 +1140,6 @@
   </data>
   <data name="gbJacket.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
-  </data>
-  <data name="&gt;&gt;pictureBoxJacket.Name" xml:space="preserve">
-    <value>pictureBoxJacket</value>
-  </data>
-  <data name="&gt;&gt;pictureBoxJacket.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pictureBoxJacket.Parent" xml:space="preserve">
-    <value>gbJacket</value>
-  </data>
-  <data name="&gt;&gt;pictureBoxJacket.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;lblDisplayPathJacket.Name" xml:space="preserve">
-    <value>lblDisplayPathJacket</value>
-  </data>
-  <data name="&gt;&gt;lblDisplayPathJacket.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblDisplayPathJacket.Parent" xml:space="preserve">
-    <value>gbJacket</value>
-  </data>
-  <data name="&gt;&gt;lblDisplayPathJacket.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;btnJacket.Name" xml:space="preserve">
-    <value>btnJacket</value>
-  </data>
-  <data name="&gt;&gt;btnJacket.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnJacket.Parent" xml:space="preserve">
-    <value>gbJacket</value>
-  </data>
-  <data name="&gt;&gt;btnJacket.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="gbJacket.Location" type="System.Drawing.Point, System.Drawing">
-    <value>8, 328</value>
-  </data>
-  <data name="gbJacket.Size" type="System.Drawing.Size, System.Drawing">
-    <value>350, 378</value>
-  </data>
-  <data name="gbJacket.TabIndex" type="System.Int32, mscorlib">
-    <value>17</value>
-  </data>
-  <data name="&gt;&gt;gbJacket.Name" xml:space="preserve">
-    <value>gbJacket</value>
-  </data>
-  <data name="&gt;&gt;gbJacket.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;gbJacket.Parent" xml:space="preserve">
-    <value>addGame</value>
-  </data>
-  <data name="&gt;&gt;gbJacket.ZOrder" xml:space="preserve">
-    <value>6</value>
   </data>
   <data name="pictureBoxJacket.Location" type="System.Drawing.Point, System.Drawing">
     <value>52, 102</value>
@@ -1615,6 +1216,27 @@
   <data name="&gt;&gt;btnJacket.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
+  <data name="gbJacket.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 328</value>
+  </data>
+  <data name="gbJacket.Size" type="System.Drawing.Size, System.Drawing">
+    <value>350, 378</value>
+  </data>
+  <data name="gbJacket.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;gbJacket.Name" xml:space="preserve">
+    <value>gbJacket</value>
+  </data>
+  <data name="&gt;&gt;gbJacket.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;gbJacket.Parent" xml:space="preserve">
+    <value>addGame</value>
+  </data>
+  <data name="&gt;&gt;gbJacket.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
   <data name="inputHacked.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -1641,66 +1263,6 @@
   </data>
   <data name="&gt;&gt;inputHacked.ZOrder" xml:space="preserve">
     <value>7</value>
-  </data>
-  <data name="&gt;&gt;RBToDo.Name" xml:space="preserve">
-    <value>RBToDo</value>
-  </data>
-  <data name="&gt;&gt;RBToDo.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;RBToDo.Parent" xml:space="preserve">
-    <value>gbStatut</value>
-  </data>
-  <data name="&gt;&gt;RBToDo.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;RBFinish.Name" xml:space="preserve">
-    <value>RBFinish</value>
-  </data>
-  <data name="&gt;&gt;RBFinish.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;RBFinish.Parent" xml:space="preserve">
-    <value>gbStatut</value>
-  </data>
-  <data name="&gt;&gt;RBFinish.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;RBCurrent.Name" xml:space="preserve">
-    <value>RBCurrent</value>
-  </data>
-  <data name="&gt;&gt;RBCurrent.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;RBCurrent.Parent" xml:space="preserve">
-    <value>gbStatut</value>
-  </data>
-  <data name="&gt;&gt;RBCurrent.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="gbStatut.Location" type="System.Drawing.Point, System.Drawing">
-    <value>504, 6</value>
-  </data>
-  <data name="gbStatut.Size" type="System.Drawing.Size, System.Drawing">
-    <value>123, 138</value>
-  </data>
-  <data name="gbStatut.TabIndex" type="System.Int32, mscorlib">
-    <value>12</value>
-  </data>
-  <data name="gbStatut.Text" xml:space="preserve">
-    <value>Statut</value>
-  </data>
-  <data name="&gt;&gt;gbStatut.Name" xml:space="preserve">
-    <value>gbStatut</value>
-  </data>
-  <data name="&gt;&gt;gbStatut.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;gbStatut.Parent" xml:space="preserve">
-    <value>addGame</value>
-  </data>
-  <data name="&gt;&gt;gbStatut.ZOrder" xml:space="preserve">
-    <value>8</value>
   </data>
   <data name="RBToDo.Location" type="System.Drawing.Point, System.Drawing">
     <value>22, 38</value>
@@ -1774,6 +1336,30 @@
   <data name="&gt;&gt;RBCurrent.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
+  <data name="gbStatut.Location" type="System.Drawing.Point, System.Drawing">
+    <value>504, 6</value>
+  </data>
+  <data name="gbStatut.Size" type="System.Drawing.Size, System.Drawing">
+    <value>123, 138</value>
+  </data>
+  <data name="gbStatut.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="gbStatut.Text" xml:space="preserve">
+    <value>Statut</value>
+  </data>
+  <data name="&gt;&gt;gbStatut.Name" xml:space="preserve">
+    <value>gbStatut</value>
+  </data>
+  <data name="&gt;&gt;gbStatut.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;gbStatut.Parent" xml:space="preserve">
+    <value>addGame</value>
+  </data>
+  <data name="&gt;&gt;gbStatut.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
   <data name="inputFav.Location" type="System.Drawing.Point, System.Drawing">
     <value>504, 180</value>
   </data>
@@ -1821,6 +1407,33 @@
   </data>
   <data name="&gt;&gt;inputMp.ZOrder" xml:space="preserve">
     <value>10</value>
+  </data>
+  <data name="addGame.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 29</value>
+  </data>
+  <data name="addGame.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="addGame.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1304, 729</value>
+  </data>
+  <data name="addGame.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="addGame.Text" xml:space="preserve">
+    <value>Ajouter</value>
+  </data>
+  <data name="&gt;&gt;addGame.Name" xml:space="preserve">
+    <value>addGame</value>
+  </data>
+  <data name="&gt;&gt;addGame.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;addGame.Parent" xml:space="preserve">
+    <value>container</value>
+  </data>
+  <data name="&gt;&gt;addGame.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="deleteGame.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 29</value>
@@ -1875,6 +1488,60 @@
   </data>
   <data name="&gt;&gt;editGame.ZOrder" xml:space="preserve">
     <value>3</value>
+  </data>
+  <data name="container.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="container.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="container.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1312, 762</value>
+  </data>
+  <data name="container.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;container.Name" xml:space="preserve">
+    <value>container</value>
+  </data>
+  <data name="&gt;&gt;container.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;container.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;container.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <metadata name="contextMenuStripCardRightClick.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="btnAddFav.Size" type="System.Drawing.Size, System.Drawing">
+    <value>202, 24</value>
+  </data>
+  <data name="btnAddFav.Text" xml:space="preserve">
+    <value>Ajouter aux favoris</value>
+  </data>
+  <data name="btnDelete.Size" type="System.Drawing.Size, System.Drawing">
+    <value>202, 24</value>
+  </data>
+  <data name="btnDelete.Text" xml:space="preserve">
+    <value>Supprimer</value>
+  </data>
+  <data name="btnEdit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>202, 24</value>
+  </data>
+  <data name="btnEdit.Text" xml:space="preserve">
+    <value>Éditer</value>
+  </data>
+  <data name="contextMenuStripCardRightClick.Size" type="System.Drawing.Size, System.Drawing">
+    <value>203, 76</value>
+  </data>
+  <data name="&gt;&gt;contextMenuStripCardRightClick.Name" xml:space="preserve">
+    <value>contextMenuStripCardRightClick</value>
+  </data>
+  <data name="&gt;&gt;contextMenuStripCardRightClick.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -5063,6 +4730,24 @@
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>YourGameLibrary1.0</value>
+  </data>
+  <data name="&gt;&gt;btnAddFav.Name" xml:space="preserve">
+    <value>btnAddFav</value>
+  </data>
+  <data name="&gt;&gt;btnAddFav.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnDelete.Name" xml:space="preserve">
+    <value>btnDelete</value>
+  </data>
+  <data name="&gt;&gt;btnDelete.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnEdit.Name" xml:space="preserve">
+    <value>btnEdit</value>
+  </data>
+  <data name="&gt;&gt;btnEdit.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>Form1</value>

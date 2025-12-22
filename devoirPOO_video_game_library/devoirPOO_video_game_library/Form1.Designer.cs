@@ -30,10 +30,12 @@ namespace devoirPOO_video_game_library
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             TabControl container;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             toList = new TabPage();
             flowLayoutPanelList = new FlowLayoutPanel();
+            gameCard2 = new GameCard();
             inputSort = new TextBox();
             addGame = new TabPage();
             gbYP = new GroupBox();
@@ -65,9 +67,14 @@ namespace devoirPOO_video_game_library
             inputMp = new CheckBox();
             deleteGame = new TabPage();
             editGame = new TabPage();
+            contextMenuStripCardRightClick = new ContextMenuStrip(components);
+            btnAddFav = new ToolStripMenuItem();
+            btnDelete = new ToolStripMenuItem();
+            btnEdit = new ToolStripMenuItem();
             container = new TabControl();
             container.SuspendLayout();
             toList.SuspendLayout();
+            flowLayoutPanelList.SuspendLayout();
             addGame.SuspendLayout();
             gbYP.SuspendLayout();
             gbPf.SuspendLayout();
@@ -77,6 +84,7 @@ namespace devoirPOO_video_game_library
             gbJacket.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBoxJacket).BeginInit();
             gbStatut.SuspendLayout();
+            contextMenuStripCardRightClick.SuspendLayout();
             SuspendLayout();
             // 
             // container
@@ -100,8 +108,15 @@ namespace devoirPOO_video_game_library
             // flowLayoutPanelList
             // 
             resources.ApplyResources(flowLayoutPanelList, "flowLayoutPanelList");
+            flowLayoutPanelList.Controls.Add(gameCard2);
             flowLayoutPanelList.Name = "flowLayoutPanelList";
             flowLayoutPanelList.Resize += flowLayoutPanel1_Resize;
+            // 
+            // gameCard2
+            // 
+            resources.ApplyResources(gameCard2, "gameCard2");
+            gameCard2.Name = "gameCard2";
+            gameCard2.Click += GameCard_Click;
             // 
             // inputSort
             // 
@@ -324,6 +339,29 @@ namespace devoirPOO_video_game_library
             editGame.Name = "editGame";
             editGame.UseVisualStyleBackColor = true;
             // 
+            // contextMenuStripCardRightClick
+            // 
+            contextMenuStripCardRightClick.ImageScalingSize = new Size(20, 20);
+            contextMenuStripCardRightClick.Items.AddRange(new ToolStripItem[] { btnAddFav, btnDelete, btnEdit });
+            contextMenuStripCardRightClick.Name = "contextMenuStrip1";
+            resources.ApplyResources(contextMenuStripCardRightClick, "contextMenuStripCardRightClick");
+            // 
+            // btnAddFav
+            // 
+            btnAddFav.Name = "btnAddFav";
+            resources.ApplyResources(btnAddFav, "btnAddFav");
+            // 
+            // btnDelete
+            // 
+            btnDelete.Name = "btnDelete";
+            resources.ApplyResources(btnDelete, "btnDelete");
+            btnDelete.Click += DeleteVideoGame;
+            // 
+            // btnEdit
+            // 
+            btnEdit.Name = "btnEdit";
+            resources.ApplyResources(btnEdit, "btnEdit");
+            // 
             // Form1
             // 
             resources.ApplyResources(this, "$this");
@@ -335,6 +373,8 @@ namespace devoirPOO_video_game_library
             container.ResumeLayout(false);
             toList.ResumeLayout(false);
             toList.PerformLayout();
+            flowLayoutPanelList.ResumeLayout(false);
+            flowLayoutPanelList.PerformLayout();
             addGame.ResumeLayout(false);
             addGame.PerformLayout();
             gbYP.ResumeLayout(false);
@@ -348,6 +388,7 @@ namespace devoirPOO_video_game_library
             gbJacket.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBoxJacket).EndInit();
             gbStatut.ResumeLayout(false);
+            contextMenuStripCardRightClick.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -444,5 +485,11 @@ namespace devoirPOO_video_game_library
                 DisplayGames();
             }
         }
+
+        private GameCard gameCard2;
+        private ContextMenuStrip contextMenuStripCardRightClick;
+        private ToolStripMenuItem btnAddFav;
+        private ToolStripMenuItem btnDelete;
+        private ToolStripMenuItem btnEdit;
     }
 }

@@ -3,6 +3,7 @@ using System.Drawing.Drawing2D; // Nécessaire pour la qualité du dessin
 namespace devoirPOO_video_game_library;
 using System.Drawing.Imaging;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.TextBox;
 
 partial class GameCard
 {
@@ -95,7 +96,7 @@ partial class GameCard
         // 
         // pictureBoxJacket
         // 
-        pictureBoxJacket.Location = new Point(3, 53);
+        pictureBoxJacket.Location = new Point(0, 50);
         pictureBoxJacket.Margin = new Padding(0);
         pictureBoxJacket.MaximumSize = new Size(250, 250);
         pictureBoxJacket.MinimumSize = new Size(250, 250);
@@ -148,38 +149,6 @@ partial class GameCard
     private PictureBox pictureBoxJacket;
     private Label lblDesc;
 
-    public void SetGameCardValues(Classes.VideoGame videoGame)
-    {
-        lblNameVG.Text = videoGame.Title;
-        lblPf.Text = videoGame.Platform;
-        lblType.Text = videoGame.Type;
-        lblYP.Text = videoGame.ReleaseYear.ToString();
-        lblDesc.Text = videoGame.Description;
-        // Charger l'image depuis le chemin spécifié
-        if (!string.IsNullOrEmpty(videoGame.ImagePath) && System.IO.File.Exists(videoGame.ImagePath))
-        {
-            pictureBoxJacket.SizeMode = PictureBoxSizeMode.StretchImage; // Ajuster l'image à la taille de la PictureBox
-        }
-        else
-        {
-            // Gérer le cas où le chemin de l'image est invalide ou le fichier n'existe pas
-            pictureBoxJacket.Image = null; // Ou définir une image par défaut
-        }
-        Image baseImage = Image.FromFile(videoGame.ImagePath);
-        if (videoGame.IsHacked)
-        {
-            // SI HACKÉ : On fusionne avec l'image des ressources
-            // Remplace 'Properties.Resources.img_hacked_stamp' par le vrai nom de ton image dans les ressources
-            Image stamp = devoirPOO_video_game_library.Resources.game_hacked;
-            pictureBoxJacket.Image = AddHackedStamp(baseImage, stamp);
-        }
-        else
-        {
-            // SINON : On affiche juste la jaquette de base
-            // ATTENTION : Il faut cloner l'image car le 'using' va détruire l'originale
-            pictureBoxJacket.Image = Image.FromFile(videoGame.ImagePath);
-        }
-    }
     // Fonction pour ajouter une image par-dessus une autre
     private Image AddHackedStamp(Image image, Image imageHacked)
     {
