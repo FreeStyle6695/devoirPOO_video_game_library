@@ -1,6 +1,8 @@
 using devoirPOO_video_game_library.Classes;
 using System.Security.Cryptography.X509Certificates;
 using System.Text.Json;
+using System.Windows.Forms;
+using System.Text.RegularExpressions; // Ne pas oublier cet import
 namespace devoirPOO_video_game_library
 {
     public partial class Form1 : Form
@@ -32,8 +34,8 @@ namespace devoirPOO_video_game_library
                 platform,
                 type,
                 releaseYear, // Conversion du texte en nombre
-                isMultiplayer : isMultiplayer,
-                isFavorite : isFavorite,
+                isMultiplayer: isMultiplayer,
+                isFavorite: isFavorite,
                 isHacked: isHacked,
                 statut,
                 description,
@@ -56,6 +58,8 @@ namespace devoirPOO_video_game_library
             inputType.SelectedIndex = -1;
             inputYP.SelectedIndex = -1;
             lblDisplayPathJacket.Text = "Aucun fichier sélectionné"; // Réinitialisation du label
+            pictureBoxJacket.Image?.Dispose(); // Libère les ressources
+            pictureBoxJacket.Image = null;
         }
 
         private void btnJacket_Click(object sender, EventArgs e)
@@ -65,7 +69,7 @@ namespace devoirPOO_video_game_library
             {
                 // 2. On définit le titre et les types de fichiers autorisés (Filtre)
                 openFileDialog.Title = "Choisir la jaquette du jeu";
-                openFileDialog.Filter = "Images (*.jpg;*.jpeg;*.png;*.bmp)|*.jpg;*.jpeg;*.png;*.bmp|Tous les fichiers (*.*)|*.*";
+                openFileDialog.Filter = "Images (*.jpg;*.jpeg;*.png;*.bmp)|*.jpg;*.jpeg;*.png;*.bmp";
 
                 // 3. On ouvre la fenêtre et on vérifie si l'utilisateur a cliqué sur "Ouvrir"
                 if (openFileDialog.ShowDialog() == DialogResult.OK)
@@ -93,9 +97,10 @@ namespace devoirPOO_video_game_library
                 videoGame = JsonSerializer.Deserialize<List<VideoGame>>(fileContent) ?? new List<VideoGame>();
                 MessageBox.Show($"fichier chargé !");
             }
-                
+
         }
-        public void SaveGameLibrary(string filePath) {
+        public void SaveGameLibrary(string filePath)
+        {
             string jsonString = JsonSerializer.Serialize(videoGame);
             File.WriteAllText(filePath, jsonString);
             //MessageBox.Show($"modification sauvegardée !");
@@ -110,5 +115,51 @@ namespace devoirPOO_video_game_library
                 flowLayoutPanelList.Controls.Add(gameCard);
             }
         }
+        private void SearchGames(object sender, EventArgs e)
+        {
+            string searchText = inputSort.Text.Trim();
+
+            // Si le champ est vide, on affiche tout et on arrête
+            if (string.IsNullOrEmpty(searchText))
+            {
+                DisplayGames();
+                return;
+            }
+
+            // On prépare la Regex pour chercher le mot exact (insensible à la casse)
+            // \b signifie "bordure de mot"
+            string pattern = $@"\b{Regex.Escape(searchText)}";
+            Regex rgx = new Regex(pattern, RegexOptions.IgnoreCase);
+
+            var filteredGames = videoGame.Where(game =>
+                rgx.IsMatch(game.Title) ||
+                rgx.IsMatch(game.Platform) ||
+                rgx.IsMatch(game.Type)
+            ).ToList();
+
+            UpdateDisplay(filteredGames);
+        }
+
+        private void UpdateDisplay(List<VideoGame> games)
+        {
+            flowLayoutPanelList.Controls.Clear();
+
+            foreach (var game in games)
+            {
+                GameCard gameCard = new GameCard();
+                gameCard.SetGameCardValues(game);
+                flowLayoutPanelList.Controls.Add(gameCard);
+            }
+
+            // Très important : on rappelle ton calcul de marges dynamiques ici !
+            AdjustCardsMargins();
+
+            flowLayoutPanelList.ResumeLayout();
+        }
+
+        //private void btnGameCard1(object sender, EventArgs e)
+        //{
+        //    gameCard1;
+        //}
     }
 }

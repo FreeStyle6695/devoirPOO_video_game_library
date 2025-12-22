@@ -1,4 +1,6 @@
-﻿namespace devoirPOO_video_game_library
+﻿using System.Windows.Forms;
+
+namespace devoirPOO_video_game_library
 {
     partial class Form1
     {
@@ -32,14 +34,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             toList = new TabPage();
             flowLayoutPanelList = new FlowLayoutPanel();
-            gameCard1 = new GameCard();
-            gameCard2 = new GameCard();
-            gameCard3 = new GameCard();
-            gameCard4 = new GameCard();
-            gameCard5 = new GameCard();
-            gameCard6 = new GameCard();
-            gameCard7 = new GameCard();
-            gameCard8 = new GameCard();
             inputSort = new TextBox();
             addGame = new TabPage();
             gbYP = new GroupBox();
@@ -74,7 +68,6 @@
             container = new TabControl();
             container.SuspendLayout();
             toList.SuspendLayout();
-            flowLayoutPanelList.SuspendLayout();
             addGame.SuspendLayout();
             gbYP.SuspendLayout();
             gbPf.SuspendLayout();
@@ -88,11 +81,11 @@
             // 
             // container
             // 
-            resources.ApplyResources(container, "container");
             container.Controls.Add(toList);
             container.Controls.Add(addGame);
             container.Controls.Add(deleteGame);
             container.Controls.Add(editGame);
+            resources.ApplyResources(container, "container");
             container.Name = "container";
             container.SelectedIndex = 0;
             // 
@@ -107,60 +100,19 @@
             // flowLayoutPanelList
             // 
             resources.ApplyResources(flowLayoutPanelList, "flowLayoutPanelList");
-            flowLayoutPanelList.Controls.Add(gameCard1);
-            flowLayoutPanelList.Controls.Add(gameCard2);
-            flowLayoutPanelList.Controls.Add(gameCard3);
-            flowLayoutPanelList.Controls.Add(gameCard4);
-            flowLayoutPanelList.Controls.Add(gameCard5);
-            flowLayoutPanelList.Controls.Add(gameCard6);
-            flowLayoutPanelList.Controls.Add(gameCard7);
-            flowLayoutPanelList.Controls.Add(gameCard8);
             flowLayoutPanelList.Name = "flowLayoutPanelList";
-            // 
-            // gameCard1
-            // 
-            resources.ApplyResources(gameCard1, "gameCard1");
-            gameCard1.Name = "gameCard1";
-            // 
-            // gameCard2
-            // 
-            resources.ApplyResources(gameCard2, "gameCard2");
-            gameCard2.Name = "gameCard2";
-            // 
-            // gameCard3
-            // 
-            resources.ApplyResources(gameCard3, "gameCard3");
-            gameCard3.Name = "gameCard3";
-            // 
-            // gameCard4
-            // 
-            resources.ApplyResources(gameCard4, "gameCard4");
-            gameCard4.Name = "gameCard4";
-            // 
-            // gameCard5
-            // 
-            resources.ApplyResources(gameCard5, "gameCard5");
-            gameCard5.Name = "gameCard5";
-            // 
-            // gameCard6
-            // 
-            resources.ApplyResources(gameCard6, "gameCard6");
-            gameCard6.Name = "gameCard6";
-            // 
-            // gameCard7
-            // 
-            resources.ApplyResources(gameCard7, "gameCard7");
-            gameCard7.Name = "gameCard7";
-            // 
-            // gameCard8
-            // 
-            resources.ApplyResources(gameCard8, "gameCard8");
-            gameCard8.Name = "gameCard8";
+            flowLayoutPanelList.Resize += flowLayoutPanel1_Resize;
             // 
             // inputSort
             // 
             resources.ApplyResources(inputSort, "inputSort");
+            inputSort.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
+            inputSort.ForeColor = SystemColors.ControlDarkDark;
             inputSort.Name = "inputSort";
+            inputSort.Tag = "tapez";
+            inputSort.Click += inputSort_Click;
+            inputSort.TextChanged += SearchGames;
+            inputSort.Leave += inputSort_Leave;
             // 
             // addGame
             // 
@@ -379,10 +331,10 @@
             Controls.Add(container);
             DoubleBuffered = true;
             Name = "Form1";
+            SizeGripStyle = SizeGripStyle.Show;
             container.ResumeLayout(false);
             toList.ResumeLayout(false);
             toList.PerformLayout();
-            flowLayoutPanelList.ResumeLayout(false);
             addGame.ResumeLayout(false);
             addGame.PerformLayout();
             gbYP.ResumeLayout(false);
@@ -434,13 +386,63 @@
         private ComboBox inputPf;
         private FlowLayoutPanel flowLayoutPanelList;
         private GameCard gameCard1;
-        private GameCard gameCard2;
-        private GameCard gameCard3;
-        private GameCard gameCard4;
-        private GameCard gameCard5;
-        private GameCard gameCard6;
-        private GameCard gameCard7;
-        private GameCard gameCard8;
         private PictureBox pictureBoxJacket;
+        private void flowLayoutPanel1_Resize(object sender, EventArgs e)
+        {
+            AdjustCardsMargins();
+        }
+        private void AdjustCardsMargins()
+        {
+            // On bloque le rafraîchissement pour éviter les clignotements
+            flowLayoutPanelList.SuspendLayout();
+
+            int panelWidth = flowLayoutPanelList.ClientSize.Width;
+
+            // On récupère la largeur d'une carte (on suppose qu'elles ont toutes la même taille)
+            // Si vous n'avez pas encore de cartes, on sort de la fonction
+            if (flowLayoutPanelList.Controls.Count == 0) return;
+            int cardWidth = flowLayoutPanelList.Controls[0].Width;
+
+            // 1. Calculer combien de cartes peuvent tenir par ligne
+            // On ajoute une marge minimale de base (ex: 10px) pour le calcul
+            int minMargin = 10;
+            int cardsPerRow = panelWidth / (cardWidth + (minMargin * 2));
+
+            if (cardsPerRow <= 0) cardsPerRow = 1;
+
+            // 2. Calculer l'espace horizontal restant
+            int totalCardWidth = cardsPerRow * cardWidth;
+            int remainingSpace = panelWidth - totalCardWidth;
+
+            // 3. Calculer la marge à appliquer de chaque côté de chaque carte
+            // On divise l'espace restant par le nombre de cartes * 2 (gauche et droite)
+            int dynamicMargin = remainingSpace / (cardsPerRow * 2);
+
+            // 4. Appliquer la marge à chaque contrôle
+            foreach (Control card in flowLayoutPanelList.Controls)
+            {
+                card.Margin = new Padding(dynamicMargin, minMargin, dynamicMargin, minMargin);
+            }
+
+            flowLayoutPanelList.ResumeLayout();
+        }
+        private void inputSort_Click(object sender, EventArgs e)
+        {
+            if (inputSort.Text == "tapez votre mot clé ici")
+            {
+                inputSort.Text = "";
+                inputSort.ForeColor = Color.Black; // Le texte devient noir quand l'utilisateur écrit
+            }
+        }
+
+        private void inputSort_Leave(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(inputSort.Text))
+            {
+                inputSort.Text = "tapez votre mot clé ici";
+                inputSort.ForeColor = Color.Gray; // On remet en gris si c'est vide
+                DisplayGames();
+            }
+        }
     }
 }

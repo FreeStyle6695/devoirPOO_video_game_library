@@ -2,6 +2,8 @@
 using System.Drawing.Drawing2D; // Nécessaire pour la qualité du dessin
 namespace devoirPOO_video_game_library;
 using System.Drawing.Imaging;
+using System.Windows.Forms;
+
 partial class GameCard
 {
     /// <summary> 
@@ -42,45 +44,61 @@ partial class GameCard
         // lblNameVG
         // 
         lblNameVG.AutoSize = true;
+        lblNameVG.Font = new Font("Segoe UI", 11F, FontStyle.Bold | FontStyle.Underline);
         lblNameVG.Location = new Point(3, 0);
-        lblNameVG.MinimumSize = new Size(305, 0);
+        lblNameVG.MaximumSize = new Size(250, 0);
+        lblNameVG.MinimumSize = new Size(250, 50);
         lblNameVG.Name = "lblNameVG";
-        lblNameVG.Size = new Size(305, 20);
+        lblNameVG.Size = new Size(250, 50);
         lblNameVG.TabIndex = 0;
         lblNameVG.Text = "nom du jeu vidéo";
         lblNameVG.TextAlign = ContentAlignment.MiddleCenter;
         // 
         // lblPf
         // 
-        lblPf.Location = new Point(34, 270);
-        lblPf.MinimumSize = new Size(250, 0);
+        lblPf.AutoSize = true;
+        lblPf.Font = new Font("Segoe UI", 10F);
+        lblPf.Location = new Point(3, 303);
+        lblPf.MaximumSize = new Size(250, 0);
+        lblPf.MinimumSize = new Size(250, 20);
         lblPf.Name = "lblPf";
-        lblPf.Size = new Size(250, 20);
+        lblPf.Size = new Size(250, 23);
         lblPf.TabIndex = 1;
         lblPf.Text = "plateforme";
         lblPf.TextAlign = ContentAlignment.MiddleCenter;
         // 
         // lblType
         // 
-        lblType.Location = new Point(34, 290);
+        lblType.AutoSize = true;
+        lblType.Font = new Font("Segoe UI", 10F);
+        lblType.Location = new Point(128, 323);
+        lblType.MaximumSize = new Size(125, 0);
+        lblType.MinimumSize = new Size(125, 20);
         lblType.Name = "lblType";
-        lblType.Size = new Size(250, 20);
+        lblType.Size = new Size(125, 23);
         lblType.TabIndex = 2;
-        lblType.Text = "type";
+        lblType.Text = "Type";
         lblType.TextAlign = ContentAlignment.MiddleCenter;
         // 
         // lblYP
         // 
-        lblYP.Location = new Point(34, 310);
+        lblYP.AutoSize = true;
+        lblYP.Font = new Font("Segoe UI", 10F);
+        lblYP.Location = new Point(128, 346);
+        lblYP.MaximumSize = new Size(125, 0);
+        lblYP.MinimumSize = new Size(125, 20);
         lblYP.Name = "lblYP";
-        lblYP.Size = new Size(250, 20);
+        lblYP.Size = new Size(125, 23);
         lblYP.TabIndex = 3;
-        lblYP.Text = "année";
+        lblYP.Text = "Année";
         lblYP.TextAlign = ContentAlignment.MiddleCenter;
         // 
         // pictureBoxJacket
         // 
-        pictureBoxJacket.Location = new Point(34, 23);
+        pictureBoxJacket.Location = new Point(3, 53);
+        pictureBoxJacket.Margin = new Padding(0);
+        pictureBoxJacket.MaximumSize = new Size(250, 250);
+        pictureBoxJacket.MinimumSize = new Size(250, 250);
         pictureBoxJacket.Name = "pictureBoxJacket";
         pictureBoxJacket.Size = new Size(250, 250);
         pictureBoxJacket.SizeMode = PictureBoxSizeMode.Zoom;
@@ -89,9 +107,13 @@ partial class GameCard
         // 
         // lblDesc
         // 
-        lblDesc.Location = new Point(34, 330);
+        lblDesc.AutoSize = true;
+        lblDesc.Font = new Font("Segoe UI", 10F, FontStyle.Italic);
+        lblDesc.Location = new Point(128, 369);
+        lblDesc.MaximumSize = new Size(125, 0);
+        lblDesc.MinimumSize = new Size(125, 20);
         lblDesc.Name = "lblDesc";
-        lblDesc.Size = new Size(250, 20);
+        lblDesc.Size = new Size(125, 23);
         lblDesc.TabIndex = 5;
         lblDesc.Text = "Description";
         lblDesc.TextAlign = ContentAlignment.MiddleCenter;
@@ -100,16 +122,18 @@ partial class GameCard
         // 
         AutoScaleDimensions = new SizeF(8F, 20F);
         AutoScaleMode = AutoScaleMode.Font;
+        AutoSize = true;
         Controls.Add(lblDesc);
         Controls.Add(pictureBoxJacket);
         Controls.Add(lblYP);
         Controls.Add(lblType);
         Controls.Add(lblPf);
         Controls.Add(lblNameVG);
-        MaximumSize = new Size(311, 350);
-        MinimumSize = new Size(311, 350);
+        Margin = new Padding(5);
+        MaximumSize = new Size(250, 0);
+        MinimumSize = new Size(250, 400);
         Name = "GameCard";
-        Size = new Size(311, 350);
+        Size = new Size(250, 400);
         ((System.ComponentModel.ISupportInitialize)pictureBoxJacket).EndInit();
         ResumeLayout(false);
         PerformLayout();
@@ -193,7 +217,7 @@ partial class GameCard
                 // --- NOUVEAUTÉ 2 : LE CENTRAGE ---
 
                 // Calcul de la taille (on garde 1/3 de la largeur, tu peux changer ça si tu veux)
-                int largeurOverlay = image.Width/2;
+                int largeurOverlay = image.Width / 2;
                 // Calcul de la hauteur proportionnelle
                 int hauteurOverlay = (imageHacked.Height * largeurOverlay) / imageHacked.Width;
 
