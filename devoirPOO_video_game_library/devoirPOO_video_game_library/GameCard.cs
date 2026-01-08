@@ -52,6 +52,11 @@ namespace devoirPOO_video_game_library
 
             // ASTUCE : On lie le clic de TOUS les composants internes à la carte
             BindClickEvents(this);
+
+            // --- AJOUT POUR L'AFFICHAGE DES ICÔNES ---
+            // Permet aux images de s'adapter à la taille de la petite case sans être déformées
+            pictureBoxMultiplayer.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBoxFavori.SizeMode = PictureBoxSizeMode.Zoom;
         }
 
         // Cette méthode permet de cliquer n'importe où (sur l'image, le texte, etc.)
@@ -90,7 +95,7 @@ namespace devoirPOO_video_game_library
         }
         public void SetGameCardValues(Classes.VideoGame videoGame)
         {
-            this.GameData = videoGame; // <--- AJOUTE CETTE LIGNE (très important pour la suppression !)
+            this.GameData = videoGame;
 
             lblNameVG.Text = videoGame.Title;
             lblPf.Text = videoGame.Platform;
@@ -98,14 +103,13 @@ namespace devoirPOO_video_game_library
             lblYP.Text = videoGame.ReleaseYear.ToString();
             lblDesc.Text = videoGame.Description;
 
-            // On vérifie si l'image existe avant de faire quoi que ce soit
+            // --- GESTION JAQUETTE (Code existant) ---
             if (!string.IsNullOrEmpty(videoGame.ImagePath) && System.IO.File.Exists(videoGame.ImagePath))
             {
-                // On charge l'image une seule fois
                 Image baseImage = Image.FromFile(videoGame.ImagePath);
-
                 if (videoGame.IsHacked)
                 {
+                    // Assure-toi d'avoir importé Resources (using devoirPOO_video_game_library.Properties;)
                     Image stamp = Resources.game_hacked;
                     pictureBoxJacket.Image = AddHackedStamp(baseImage, stamp);
                 }
@@ -116,7 +120,36 @@ namespace devoirPOO_video_game_library
             }
             else
             {
-                pictureBoxJacket.Image = null; // Ou une image par défaut
+                pictureBoxJacket.Image = null;
+            }
+
+            // --- GESTION MULTIJOUEUR ---
+            // Si c'est multijoueur, on met l'image A, sinon l'image B
+            if (videoGame.IsMultiplayer)
+            {
+                // Remplace 'icone_multi' par le nom exact de ton image dans les ressources
+                pictureBoxMultiplayer.Image = Resources.icon_multi;
+            }
+            else
+            {
+                // Remplace 'icone_solo' par le nom exact de ton image
+                pictureBoxMultiplayer.Image = Resources.icon_solo;
+            }
+
+            // --- GESTION FAVORI ---
+            if (videoGame.IsFavorite)
+            {
+                // Affiche l'image "Cœur/Étoile pleine"
+                pictureBoxFavori.Image = Resources.icon_favoris;
+            }
+            else
+            {
+                // Soit tu mets une image "vide", soit tu caches l'image (null)
+                // Option A : Image vide
+                // pictureBoxFavori.Image = Properties.Resources.icone_non_favori;
+
+                // Option B : Rien du tout
+                pictureBoxFavori.Image = null;
             }
         }
     }

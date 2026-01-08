@@ -12,6 +12,7 @@ namespace devoirPOO_video_game_library
         public Form1()
         {
             InitializeComponent();
+            btnEdit.Click += EditVideoGame;
             LoadGameLibrary(filePath);
             DisplayGames();
         }
@@ -214,6 +215,36 @@ namespace devoirPOO_video_game_library
 
                     SaveGameLibrary(filePath);
                     DisplayGames();
+                }
+            }
+        }
+        private void EditVideoGame(object sender, EventArgs e)
+        {
+            // 1. Récupérer la carte cliquée
+            ToolStripMenuItem item = sender as ToolStripMenuItem;
+            ContextMenuStrip menu = item?.Owner as ContextMenuStrip;
+            GameCard cardToEdit = menu?.SourceControl as GameCard;
+
+            // Si on a bien trouvé une carte et ses données
+            if (cardToEdit?.GameData != null)
+            {
+                // 2. Créer la fenêtre d'édition en lui passant les données du jeu
+                EditGameForm editForm = new EditGameForm(cardToEdit.GameData);
+
+                // 3. Ouvrir la fenêtre en mode "Dialog" (bloque Form1)
+                // On vérifie si l'utilisateur a cliqué sur "Enregistrer" (DialogResult.OK)
+                if (editForm.ShowDialog() == DialogResult.OK)
+                {
+                    // 4. Si OK, on sauvegarde et on rafraichit l'affichage
+                    SaveGameLibrary(filePath);
+                    DisplayGames();
+
+                    MessageBox.Show("Modifications enregistrées !");
+                }
+                else
+                {
+                    // Si l'utilisateur a cliqué sur Annuler, on ne fait rien
+                    // Les données n'ont pas été modifiées dans l'objet grâce à la logique du bouton Save
                 }
             }
         }

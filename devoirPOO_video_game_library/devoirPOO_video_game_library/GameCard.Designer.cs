@@ -39,7 +39,11 @@ partial class GameCard
         lblYP = new Label();
         pictureBoxJacket = new PictureBox();
         lblDesc = new Label();
+        pictureBoxMultiplayer = new PictureBox();
+        pictureBoxFavori = new PictureBox();
         ((System.ComponentModel.ISupportInitialize)pictureBoxJacket).BeginInit();
+        ((System.ComponentModel.ISupportInitialize)pictureBoxMultiplayer).BeginInit();
+        ((System.ComponentModel.ISupportInitialize)pictureBoxFavori).BeginInit();
         SuspendLayout();
         // 
         // lblNameVG
@@ -119,11 +123,29 @@ partial class GameCard
         lblDesc.Text = "Description";
         lblDesc.TextAlign = ContentAlignment.MiddleCenter;
         // 
+        // pictureBoxMultiplayer
+        // 
+        pictureBoxMultiplayer.Location = new Point(3, 323);
+        pictureBoxMultiplayer.Name = "pictureBoxMultiplayer";
+        pictureBoxMultiplayer.Size = new Size(125, 33);
+        pictureBoxMultiplayer.TabIndex = 6;
+        pictureBoxMultiplayer.TabStop = false;
+        // 
+        // pictureBoxFavori
+        // 
+        pictureBoxFavori.Location = new Point(3, 359);
+        pictureBoxFavori.Name = "pictureBoxFavori";
+        pictureBoxFavori.Size = new Size(125, 33);
+        pictureBoxFavori.TabIndex = 7;
+        pictureBoxFavori.TabStop = false;
+        // 
         // GameCard
         // 
         AutoScaleDimensions = new SizeF(8F, 20F);
         AutoScaleMode = AutoScaleMode.Font;
         AutoSize = true;
+        Controls.Add(pictureBoxFavori);
+        Controls.Add(pictureBoxMultiplayer);
         Controls.Add(lblDesc);
         Controls.Add(pictureBoxJacket);
         Controls.Add(lblYP);
@@ -136,6 +158,8 @@ partial class GameCard
         Name = "GameCard";
         Size = new Size(250, 400);
         ((System.ComponentModel.ISupportInitialize)pictureBoxJacket).EndInit();
+        ((System.ComponentModel.ISupportInitialize)pictureBoxMultiplayer).EndInit();
+        ((System.ComponentModel.ISupportInitialize)pictureBoxFavori).EndInit();
         ResumeLayout(false);
         PerformLayout();
     }
@@ -215,4 +239,7 @@ partial class GameCard
         // 6. On renvoie l'image fusionnée
         return imageCombined;
     }
+
+    private PictureBox pictureBoxMultiplayer;
+    private PictureBox pictureBoxFavori;
 }

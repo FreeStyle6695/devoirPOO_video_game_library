@@ -65,8 +65,6 @@ namespace devoirPOO_video_game_library
             RBCurrent = new RadioButton();
             inputFav = new CheckBox();
             inputMp = new CheckBox();
-            deleteGame = new TabPage();
-            editGame = new TabPage();
             contextMenuStripCardRightClick = new ContextMenuStrip(components);
             btnAddFav = new ToolStripMenuItem();
             btnDelete = new ToolStripMenuItem();
@@ -91,8 +89,6 @@ namespace devoirPOO_video_game_library
             // 
             container.Controls.Add(toList);
             container.Controls.Add(addGame);
-            container.Controls.Add(deleteGame);
-            container.Controls.Add(editGame);
             resources.ApplyResources(container, "container");
             container.Name = "container";
             container.SelectedIndex = 0;
@@ -327,18 +323,6 @@ namespace devoirPOO_video_game_library
             inputMp.Name = "inputMp";
             inputMp.UseVisualStyleBackColor = true;
             // 
-            // deleteGame
-            // 
-            resources.ApplyResources(deleteGame, "deleteGame");
-            deleteGame.Name = "deleteGame";
-            deleteGame.UseVisualStyleBackColor = true;
-            // 
-            // editGame
-            // 
-            resources.ApplyResources(editGame, "editGame");
-            editGame.Name = "editGame";
-            editGame.UseVisualStyleBackColor = true;
-            // 
             // contextMenuStripCardRightClick
             // 
             contextMenuStripCardRightClick.ImageScalingSize = new Size(20, 20);
@@ -396,8 +380,6 @@ namespace devoirPOO_video_game_library
 
         private TabPage toList;
         private TabPage addGame;
-        private TabPage deleteGame;
-        private TabPage editGame;
         private TextBox inputSort;
         private TextBox inputDesc;
         private CheckBox inputMp;

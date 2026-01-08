@@ -1435,60 +1435,6 @@
   <data name="&gt;&gt;addGame.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="deleteGame.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 29</value>
-  </data>
-  <data name="deleteGame.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
-  </data>
-  <data name="deleteGame.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1304, 729</value>
-  </data>
-  <data name="deleteGame.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="deleteGame.Text" xml:space="preserve">
-    <value>Supprimer</value>
-  </data>
-  <data name="&gt;&gt;deleteGame.Name" xml:space="preserve">
-    <value>deleteGame</value>
-  </data>
-  <data name="&gt;&gt;deleteGame.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;deleteGame.Parent" xml:space="preserve">
-    <value>container</value>
-  </data>
-  <data name="&gt;&gt;deleteGame.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="editGame.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 29</value>
-  </data>
-  <data name="editGame.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
-  </data>
-  <data name="editGame.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1304, 729</value>
-  </data>
-  <data name="editGame.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="editGame.Text" xml:space="preserve">
-    <value>Modifier</value>
-  </data>
-  <data name="&gt;&gt;editGame.Name" xml:space="preserve">
-    <value>editGame</value>
-  </data>
-  <data name="&gt;&gt;editGame.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;editGame.Parent" xml:space="preserve">
-    <value>container</value>
-  </data>
-  <data name="&gt;&gt;editGame.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
   <data name="container.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
